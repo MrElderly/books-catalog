@@ -8,7 +8,7 @@ let categories = "All";
 let sorting = "Relevance"
 let searchBook = "book";
 let load = 0;
-let loading = false;
+
 
 class Books extends Component{
 

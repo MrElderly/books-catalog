@@ -1,5 +1,5 @@
-import React, {Component} from "react"; 
-import Search from "./Search";
+import React from "react"; 
+
 
 let Header =() => {
     return (
