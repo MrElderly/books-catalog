@@ -23,7 +23,6 @@ const Modal = ({show, item, onClose}) => {
                 <h1>{item.volumeInfo.title}</h1>
                 <h3>{item.volumeInfo.categories}</h3>
                 <h4>{item.volumeInfo.authors} <span>{item.volumeInfo.publishedDate}</span></h4><br/>
-                <button onClick={onClose}>Close</button>
               </div>
                 </div>
                 <h4 className="description">{item.volumeInfo.description}</h4>

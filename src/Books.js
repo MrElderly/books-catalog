@@ -3,16 +3,12 @@ import { Component } from "react";
 import Search from "./Search";
 import BookList from "./BookList"; 
 
-
 let totalItems = 0;
-
 let categories = "All";
 let sorting = "Relevance"
 let searchBook = "book";
 let load = 0;
 let loading = false;
-
-
 
 class Books extends Component{
 
@@ -27,7 +23,6 @@ class Books extends Component{
     }
 }
 
-
 search = (e) => {
 this.setState({search: e.target.value})
 }
@@ -39,24 +34,18 @@ sorting = (e) => {
 categories = (e) => {
     this.setState({categories: e.target.value})
     }
-    
-
 
 searchBook = (e) => {
  
-
-  
 e.preventDefault();
   
 searchBook = this.state.search;
 categories = this.state.categories;
 sorting = this.state.sorting;
 
-
 console.log(searchBook);
   console.log(categories);
   console.log(sorting);
-  
   
  if (categories === undefined) {
     categories = "All";
@@ -67,12 +56,6 @@ sorting = this.state.sorting;
     sorting = "Relevance";
   }
   
-
-
-
-
-
-
 if (categories === "All") {
   fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchBook}&maxResults=30&orderBy=${sorting}`)
   .then(response => response.json())
@@ -152,7 +135,6 @@ else {
 }
 
 render(){
-
 
   return (
 
